@@ -1,8 +1,4 @@
 # Data Center Cooling DQN Project
-
-
-##### Face Mask Detection algorithm built in PyTorch using Transfer Learning from SOTA Scaled YOLOv4 model and Computer Vision concepts to detect mask or non-mask wearing in static images as well as in videos.
-#
 #
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)    [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -38,9 +34,9 @@ Available Actions
 System Model
 - Each episode is a pre-defined period of time (e.g. one day)
 - At each time T within the period of time the server temperature will be calculated based on a function of: 
-	• The ambient temperature 
-	• The data rate going through the server* 
-	• The number of users logged on to the server*
+	- The ambient temperature 
+	- The data rate going through the server* 
+	- The number of users logged on to the server*
 		𝑇_𝑠𝑒𝑟𝑣𝑒𝑟=𝑓(𝑇_(𝑎𝑚𝑏 )+ 𝛽_1 𝑅_𝑑𝑎𝑡𝑎+ 𝛽_2 𝑁_𝑢𝑠𝑒𝑟𝑠)
 		*(Random value within a pre-defined range)
 
@@ -55,8 +51,6 @@ Game Over
 - As the agent explores, it may get to an upper and lower bound of the temperature constraints. When this happens, the episode will end, and move to the next one to avoid introducing states that are outside of our bounds.
 
 ## Solving the MDP Using DQN Learning Algorithm
-
-To run our code it is best to use the Google Colab resources as the training will require high GPU processing. Simply, clone this repo and upload to a Colab instance:
 
 ## Hyperparameter Tuning
 
